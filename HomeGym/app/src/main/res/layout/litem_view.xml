@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <ImageView
+        android:id="@+id/litem_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+
+    <TextView
+        android:id="@+id/litem_text"
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:textSize="15dp" />
+</LinearLayout>

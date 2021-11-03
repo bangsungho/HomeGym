@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end|right"
+        app:menu="@menu/nav_menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/training"></ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button1"
+                    android:text="상체"
+                    android:layout_margin="12dp">
+                </Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button2"
+                    android:text="하체"
+                    android:layout_margin="12dp">
+                </Button>
+            </LinearLayout>
+
+            <SlidingDrawer
+                android:id="@+id/slide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:allowSingleTap="true"
+                android:animateOnClick="true"
+                android:bottomOffset="5dp"
+                android:content="@+id/content"
+                android:handle="@+id/handle"
+                android:orientation="vertical"
+                android:topOffset="400dp">
+
+                <ImageView
+                    android:id="@+id/handle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dumbbell" />
+
+                <LinearLayout
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFFFF"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/food"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="식 단" />
+                </LinearLayout>
+            </SlidingDrawer>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
