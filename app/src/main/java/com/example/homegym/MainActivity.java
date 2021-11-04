@@ -22,7 +22,7 @@ import android.widget.VideoView;
 public class MainActivity extends AppCompatActivity {
     private ImageView imageView;
     private DrawerLayout drawerLayout;
-    Button button1, button2, food;
+    Button button1, button2,button3, food;
 
 
     @Override
@@ -55,6 +55,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        button3 = (Button) findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), WholeBodyActivity.class);
+                startActivity(intent);
+            }
+        });
         food = (Button) findViewById(R.id.food);
         food.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-   @Override
+    @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
         MenuInflater inflater = getMenuInflater();
@@ -89,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
                 toast.setText("Select Menu1");
                 break;
         }
+
 
         toast.show();
 

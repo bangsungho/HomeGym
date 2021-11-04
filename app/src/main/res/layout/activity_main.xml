@@ -54,6 +54,13 @@
                     android:text="하체"
                     android:layout_margin="12dp">
                 </Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button3"
+                    android:text="전신 운동"
+                    android:layout_margin="12dp">
+                </Button>
             </LinearLayout>
 
             <SlidingDrawer

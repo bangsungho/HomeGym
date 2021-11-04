@@ -12,9 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:label="@string/title_activity_login2"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,11 +26,17 @@
             android:name=".LrecItemActivity"
             android:label="LrecItemActivity 액티비티" />
         <activity
+            android:name=".WrecItemActivity"
+            android:label="WrecItemActivity 액티비티" />
+        <activity
             android:name=".UpperActivity"
             android:label="UpperActivity 액티비티" />
         <activity
             android:name=".LowerActivity"
             android:label="LowerActivity 액티비티" />
+        <activity
+            android:name=".WholeBodyActivity"
+            android:label="WholeBodyActivity 액티비티" />
         <activity
             android:name=".DietActivity"
             android:label="DietActivity 액티비티" />
