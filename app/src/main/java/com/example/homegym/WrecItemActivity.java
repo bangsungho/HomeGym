@@ -6,7 +6,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+// 전신 운동 방법 각 운동법
 public class WrecItemActivity extends AppCompatActivity {
     private Intent wintent;
     private int wnumber;

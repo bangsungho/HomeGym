@@ -40,6 +40,9 @@
         <activity
             android:name=".DietActivity"
             android:label="DietActivity 액티비티" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="LoginActivity 액티비티" />
     </application>
 
 </manifest>

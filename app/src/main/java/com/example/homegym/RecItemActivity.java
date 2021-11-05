@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
-
+// 상체 운동 방법 각 운동법
 public class RecItemActivity extends AppCompatActivity {
     private Intent intent;
     private int number;

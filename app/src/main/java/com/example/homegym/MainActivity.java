@@ -22,9 +22,11 @@ import android.widget.VideoView;
 public class MainActivity extends AppCompatActivity {
     private ImageView imageView;
     private DrawerLayout drawerLayout;
-    Button button1, button2,button3, food;
+    Button button1, button2,button3, food, test1;
 
 
+    //버튼과 각 액티비티 연결
+    //드로어 레이아웃 연결
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
             drawerLayout.openDrawer(Gravity.RIGHT);
         });
 
+        //상체 운동 버튼
         button1 = (Button) findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //하체 운동 버튼
         button2 = (Button) findViewById(R.id.button2);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //전신 운동 버튼
         button3 = (Button) findViewById(R.id.button3);
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //식단 버튼
         food = (Button) findViewById(R.id.food);
         food.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +79,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        // ** 로그인 페이지 테스트 **
+        test1 = (Button) findViewById(R.id.test1);
+        test1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SlidingDrawer drawer = (SlidingDrawer)findViewById(R.id.slide);
+                drawer.animateClose();
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-
+// 전신 운동법 리스트
 public class WholeBodyActivity extends Activity {
     public RecyclerView recyclerView;
     ArrayList<WrecItem> itemList;

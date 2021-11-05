@@ -6,7 +6,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+// 하체 운동 방법 각 운동법
 public class LrecItemActivity extends AppCompatActivity {
     private Intent lintent;
     private int lnumber;

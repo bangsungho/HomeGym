@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-//하체
+//하체 운동법 리스트
 public class LowerActivity extends Activity {
     public RecyclerView recyclerView;
     ArrayList<LrecItem> itemList;

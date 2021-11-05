@@ -23,7 +23,7 @@ import android.widget.ListView;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
-//상체
+//상체 운동법 리스트
 public class UpperActivity extends Activity {
     public RecyclerView recyclerView;
     ArrayList<RecItem> itemList;
